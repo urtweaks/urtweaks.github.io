@@ -1931,8 +1931,10 @@
 
  .button:active {
    transition    : all 0.1s ease-in-out;
+	 background-color: white;
+	 color: #5E42A6 !important;
    transition-duration: 0.1s;
-   transform: translateY(3px);
+   transform: translateY(2px);
  }
 
 		input[type="submit"].icon:before,
@@ -1985,7 +1987,8 @@
 .button.special:focus {outline:0 !important;}
 
 .button.special:active {
-  background-color: #ffffff;
+	background-color: white;
+	 color: #5E42A6 !important;
   color: #312450;
   transition-duration: 0.2s;
   transform: translateY(4px);
