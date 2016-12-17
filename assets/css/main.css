@@ -1899,7 +1899,7 @@
 		text-decoration: none;
 		text-transform: uppercase;
 		white-space: nowrap;
-		transition-duration: 0.2s;
+		transition-duration: 0.4s;
 	}
 
 		input[type="submit"]:after,
@@ -1930,8 +1930,8 @@
  .button:focus {outline:0 !important;}
 
  .button:active {
-   transition    : all 0.2s ease-in-out;
-   transition-duration: 0.4s;
+   transition    : all 0.1s ease-in-out;
+   transition-duration: 0.1s;
    transform: translateY(3px);
  }
 
@@ -1988,7 +1988,7 @@
   background-color: #ffffff;
   color: #312450;
   transition-duration: 0.2s;
-  transform: translateY(3px);
+  transform: translateY(4px);
 }
 
 
