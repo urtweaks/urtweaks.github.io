@@ -1879,14 +1879,7 @@
 	input[type="button"],
 	button,
 	.button {
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		-ms-appearance: none;
-		appearance: none;
-		-moz-transition: border-color 0.2s ease;
-		-webkit-transition: border-color 0.2s ease;
-		-ms-transition: border-color 0.2s ease;
-		transition: border-color 0.2s ease;
+
 		background-color: transparent;
 		border: solid 1px !important;
 		border-color: rgba(255, 255, 255, 0.15) !important;
@@ -1906,6 +1899,7 @@
 		text-decoration: none;
 		text-transform: uppercase;
 		white-space: nowrap;
+		transition-duration: 0.2s;
 	}
 
 		input[type="submit"]:after,
@@ -1913,18 +1907,8 @@
 		input[type="button"]:after,
 		button:after,
 		.button:after {
-			-moz-transform: scale(0.25);
-			-webkit-transform: scale(0.25);
-			-ms-transform: scale(0.25);
-			transform: scale(0.25);
-			-moz-pointer-events: none;
-			-webkit-pointer-events: none;
-			-ms-pointer-events: none;
-			pointer-events: none;
-			-moz-transition: opacity 0.2s ease, -moz-transform 0.2s ease;
-			-webkit-transition: opacity 0.2s ease, -webkit-transform 0.2s ease;
-			-ms-transition: opacity 0.2s ease, -ms-transform 0.2s ease;
-			transition: opacity 0.2s ease, transform 0.2s ease;
+
+			transition    : all 0.2s ease-in-out;
 			background: #ffffff;
 			border-radius: 3em;
 			content: '';
@@ -1934,7 +1918,22 @@
 			position: absolute;
 			top: 0;
 			width: 100%;
+			transition-duration: 0.4s;
 		}
+
+		.button:hover {
+     box-shadow: 0 4px 16px 0 rgba(0,0,0,0.24),0 10px 30px 0   rgba(0,0,0,0.19);
+		 transition    : all 0.1s ease-in-out;
+		 transition-duration: 0.4s;
+ }
+
+ .button:focus {outline:0 !important;}
+
+ .button:active {
+   transition    : all 0.2s ease-in-out;
+   transition-duration: 0.4s;
+   transform: translateY(3px);
+ }
 
 		input[type="submit"].icon:before,
 		input[type="reset"].icon:before,
@@ -1978,6 +1977,19 @@
 			background-color: #ffffff;
 			color: #312450 !important;
 		}
+
+		.button.special:hover {
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,0.24),0 10px 30px 0   rgba(0,0,0,0.19);
+}
+
+.button.special:focus {outline:0 !important;}
+
+.button.special:active {
+  background-color: #ffffff;
+  color: #312450;
+  transition-duration: 0.2s;
+  transform: translateY(3px);
+}
 
 			input[type="submit"].special:after,
 			input[type="reset"].special:after,
