@@ -1899,7 +1899,7 @@
 		text-decoration: none;
 		text-transform: uppercase;
 		white-space: nowrap;
-		transition-duration: 0.4s;
+		transition-duration: 0.2s;
 	}
 
 		input[type="submit"]:after,
@@ -1923,7 +1923,7 @@
 
 		.button:hover {
      box-shadow: 0 4px 16px 0 rgba(0,0,0,0.24),0 10px 30px 0   rgba(0,0,0,0.19);
-		 transition    : all 0.1s ease-in-out;
+		 transition    : all 0.2s ease-in-out;
 		 transition-duration: 0.4s;
  }
 
@@ -1934,7 +1934,7 @@
 	 background-color: white;
 	 color: #5E42A6 !important;
    transition-duration: 0.1s;
-   transform: translateY(2px);
+   transform: translateY(4px);
  }
 
 		input[type="submit"].icon:before,
@@ -1990,7 +1990,7 @@
 	background-color: white;
 	 color: #5E42A6 !important;
   color: #312450;
-  transition-duration: 0.2s;
+  transition-duration: 0.1s;
   transform: translateY(4px);
 }
 
