@@ -1989,7 +1989,8 @@
 .button.special:active {
 	background-color: white;
 	 color: #5E42A6 !important;
-  color: #312450;
+	 transition    : all 0.1s ease-in-out;
+
   transition-duration: 0.1s;
   transform: translateY(4px);
 }
